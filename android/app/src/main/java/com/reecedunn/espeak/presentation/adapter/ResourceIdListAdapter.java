@@ -16,7 +16,7 @@
 
 package com.reecedunn.espeak;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +26,7 @@ import android.widget.TextView;
 public class ResourceIdListAdapter extends ArrayAdapter<Integer> {
     private final LayoutInflater mInflater;
 
-    public ResourceIdListAdapter(Activity context, Integer[] resources) {
+    public ResourceIdListAdapter(AppCompatActivity context, Integer[] resources) {
         super(context, android.R.layout.simple_list_item_1, resources);
         mInflater = context.getLayoutInflater();
     }

@@ -17,7 +17,6 @@
 
 package com.reecedunn.espeak;
 
-import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -28,6 +27,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceActivity;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Pair;
 import android.view.Menu;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class eSpeakActivity extends Activity {
+public class eSpeakActivity extends AppCompatActivity {
     private static final String ACTION_TTS_SETTINGS = "com.android.settings.TTS_SETTINGS";
 
     /**

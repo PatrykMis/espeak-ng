@@ -62,6 +62,7 @@ android {
 }
 
 dependencies {
+    implementation("com.android.support:appcompat-v7:28.0.0")
     androidTestImplementation("com.google.android:android-test:4.1.1.4")
     androidTestImplementation("org.hamcrest:hamcrest-library:1.3")
 }

@@ -205,7 +205,7 @@ public class TtsSettingsActivity extends PreferenceActivity {
         editor.commit();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getFragmentManager().beginTransaction().replace(
+            getSupportFragmentManager().beginTransaction().replace(
                     android.R.id.content,
                     new PrefsEspeakFragment()).commit();
         } else {
