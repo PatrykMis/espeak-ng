@@ -24,6 +24,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.preference.DialogPreference;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -314,7 +315,7 @@ public class VoiceVariantPreference extends DialogPreference {
     public class VariantDataListAdapter extends ArrayAdapter<VariantData> {
         private final LayoutInflater mInflater;
 
-        public VariantDataListAdapter(Activity context, VariantData[] resources) {
+        public VariantDataListAdapter(AppCompatActivity context, VariantData[] resources) {
             super(context, android.R.layout.simple_list_item_1, resources);
             mInflater = context.getLayoutInflater();
         }

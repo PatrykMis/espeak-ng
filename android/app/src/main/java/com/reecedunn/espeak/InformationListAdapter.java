@@ -16,7 +16,7 @@
 
 package com.reecedunn.espeak;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +29,7 @@ import java.util.List;
 public class InformationListAdapter extends ArrayAdapter<Pair<String, String>> {
     private final LayoutInflater inflater;
 
-    public InformationListAdapter(Activity context, List<Pair<String, String>> information) {
+    public InformationListAdapter(AppCompatActivity context, List<Pair<String, String>> information) {
         super(context, R.layout.information_view, information);
         this.inflater = context.getLayoutInflater();
     }
